@@ -2,8 +2,7 @@ print ("welcome to my converter.I am here to help you convert temperature on cel
 print ("temperature conversion menu:")
 print ("1.celsius to fahrenheit")
 print ("2.fahrenheit to celsius")
-print ("3.kill the program")
-print('jgdxsytyrsutr')
+print ("3.quit")
 
 tempvalue = int(input("please type the value and your "))
 
