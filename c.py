@@ -3,6 +3,7 @@ print ("temperature conversion menu:")
 print ("1.celsius to fahrenheit")
 print ("2.fahrenheit to celsius")
 print ("3.kill the program")
+print('jgdxsytyrsutr')
 
 tempvalue = int(input("please type the value and your "))
 
