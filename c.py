@@ -11,8 +11,13 @@ if choice == 1:
     fahrenheit = ((celsius* 9//5) + 32)
     print(celsius,"°C is equal to ", fahrenheit, "°F")
 
-if choice == 2:
+elif choice == 2:
     fahrenheit = float(input("please enter the temperature value in fahrenheit: "))
-    celsius = (fahrenheit - 32)*(5//9)
+    celsius = (fahrenheit - 32)*5//9
     print(fahrenheit,"°F is equal to ", celsius, "°C")
 
+elif choice == 3:
+    print("see you again")
+    
+else:
+    print("invalid choice please select 1,2 or 3")
