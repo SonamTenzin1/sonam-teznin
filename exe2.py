@@ -1,16 +1,13 @@
+"""problem 1"""
+
 input = [1, 10, 44, 12, 0, -1]
 
 def findMax(input):
-    if len(input) == 0:
-        print('The input array is empty.')
-        return
+    max = 0 """initializing max value to zero first"""
+    for e  in input:
+        if e > max :
+            max = e """if e is greater than max, reset max value"""
 
-    result_max = input[0]  # Initialize the result_max with the first element of the array
-
-    for num in input:
-        if num > result_max:
-            result_max = num  # Update result_max if a larger number is found
-
-    print('The maximum of the input is:', result_max)
+    print(max)
 
 findMax(input)
