@@ -20,12 +20,8 @@ print(output3)
 
 """problem 2"""
 def stone_piles(n):
-    if n % 2 == 0:
-        return list(range(n, 2 * n, 2))
-    else:
-        return list(range(n, 2 * n, 2))
+    return [n + 2 * i for i in range(n)]
 
-# Test cases
 input1 = 2
 input2 = 10
 input3 = 3
@@ -36,7 +32,7 @@ output2 = stone_piles(input2)
 output3 = stone_piles(input3)
 output4 = stone_piles(input4)
 
-print(output1)  # Output: [2, 4]
-print(output2)  # Output: [10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
-print(output3)  # Output: [3, 5, 7]
-print(output4)  # Output: [17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]
+print(output1)  
+print(output2)  
+print(output3)  
+print(output4) 
