@@ -1,0 +1,42 @@
+"""problem 1"""
+def check(lst):
+    count_19 = lst.count(19)
+    count_5 = lst.count(5)
+    
+    return count_19 == 2 and count_5 >= 3
+#count_19 == 2 checks if there are exactly two occurrences of 19 and if there are at least three occurrences of 5.
+
+input1 = [19, 19, 15, 5, 3, 5, 5, 2]
+input2 = [19, 15, 15, 5, 3, 3, 5, 2]
+input3 = [19, 19, 5, 5, 5, 5, 5]
+
+output1 = check(input1)
+output2 = check(input2)
+output3 = check(input3)
+
+print(output1)  
+print(output2)  
+print(output3)  
+
+"""problem 2"""
+def stone_piles(n):
+    if n % 2 == 0:
+        return list(range(n, 2 * n, 2))
+    else:
+        return list(range(n, 2 * n, 2))
+
+# Test cases
+input1 = 2
+input2 = 10
+input3 = 3
+input4 = 17
+
+output1 = stone_piles(input1)
+output2 = stone_piles(input2)
+output3 = stone_piles(input3)
+output4 = stone_piles(input4)
+
+print(output1)  # Output: [2, 4]
+print(output2)  # Output: [10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+print(output3)  # Output: [3, 5, 7]
+print(output4)  # Output: [17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]
